@@ -4,6 +4,8 @@
 스크립트를 컴파일 하기 전에 python3인터프린터가 필요합니다.
 리눅스 cli에서
 > sudo apt install python3
+
+
 를 입력하여 python 인터프린터를 설치하거나
 인터넷 브라우저를 이용하여 python 인터프린터를 설치해야 합니다.
 
