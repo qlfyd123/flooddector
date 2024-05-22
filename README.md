@@ -19,4 +19,20 @@ config.ini에서는 syndetector.py에서 사용되는 변수들을 사용자가 
 
 </br>
 PrintSystemStatus.py파일은  
-일정 주기마다 현재 서버의 백로그 크기, synack재전송 회수, syncookie 활성화 여부를 출력합니다.  
+일정 주기마다 현재 서버의 백로그 크기, synack재전송 회수, syncookie 활성화 여부를 출력합니다.  </br>
+
+## 실행가이드
+
+리눅스 콘솔에서 .py파일이 위치한 디렉토리로 이동하고 </br>
+> sudo python3 syndetector.py </br>
+
+명령어를 콘솔에 입력하여 스크립트를 실행시킵니다. </br>
+스크립트를 종료할때는</br>
+> ps -al </br>
+
+명령어를 이용해 python3 프로세스의 pid를 확인하고 </br>
+
+> sudo kill (pid) </br>
+
+명령어를 이용하여 프로세스를 직접 종료해야 합니다. </br>
+PrintSystemStatus.py 파일 역시 위와 동일합니다.
