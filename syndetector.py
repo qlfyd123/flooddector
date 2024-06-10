@@ -119,6 +119,8 @@ def detect_packet(index: int) -> int:
             else:
                 if get_syn_cookie_status() == 0:
                     adjust_syncookies(True)
+    elif index > 0 and BACKLOG_LIMIT_ARRAY[index] > conn_count > BACKLOG_LIMIT_ARRAY[index - 1]:
+        pass
     else:
         if get_syn_cookie_status() == 1:
             adjust_syncookies(False)
